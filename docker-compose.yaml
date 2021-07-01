@@ -8,7 +8,8 @@ services:
     env_file:
       - ./.env
   web:
-    image: olegnim/yamdb_final_web:latest    restart: always
+    image: olegnim/yamdb_final:latest    
+    restart: always
     volumes:
       - static_value:/code/static/
       - media_value:/code/media/
