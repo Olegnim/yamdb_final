@@ -61,7 +61,7 @@ jobs:
             sudo apt-get upgrade -y
             sudo apt-get install docker -y
             sudo apt-get install docker-compose -y
-            sudo docker pull olegnim/yamdb_final:latest
+            sudo docker pull olegnim/yamdb_final
             sudo docker-compose stop
             sudo docker-compose rm web
             touch .env 
