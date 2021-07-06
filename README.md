@@ -107,13 +107,13 @@ docker-compose exec web bash
 Выполняем миграцию базы данных
 
 ```
-python3 manage.py migrate
+python manage.py migrate
 ```
 
 Создаем суперпользователя
 
 ```
-python3 manage.py createsuperuser
+python manage.py createsuperuser
 ```
 
 Соберием всю статику внутри докера 
