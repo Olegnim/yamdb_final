@@ -98,7 +98,7 @@ DB_PORT=5432
 docker-compose up
 ```
 
-Для входа в контейнер выполните команду
+Для входа в контейнер выполните команду (последующие команды с учотом того что вы вошли в докер)
 
 ```
 docker-compose exec web bash
@@ -116,16 +116,16 @@ python manage.py migrate
 python manage.py createsuperuser
 ```
 
-Соберием всю статику внутри докера 
+Собор статичных файлов внутри докера 
 
 ```
-sudo docker-compose exec web python manage.py collectstatic
+python manage.py collectstatic
 ```
 
 Загрузка тестовых данных 
 
 ```
-sudo docker-compose exec web python manage.py loaddata fixtures.json
+python manage.py loaddata fixtures.json
 ```
 
 ### Доступные методы
